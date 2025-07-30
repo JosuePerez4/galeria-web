@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    border-color: purple;
+    border-width: 5px;
+    border-style: solid;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border-color: blueviolet;
+    border-width: 5px;
+    border-style: solid;
+    object-fit: cover;
+}
+
+.profile-info {
+    text-align: center;
+}
+
+.profile-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.profile-classification {
+    width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.profile-description {
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 20px;
+  border: 2px solid purple;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.read-more {
+  background-color: white;
+  color: purple;
+}
+
+.contact {
+  background-color: purple;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .card {
+    padding: 15px;
+    border-width: 3px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-width: 3px;
+  }
+
+  .profile-name {
+    font-size: 24px;
+  }
+
+  .profile-description {
+    font-size: 14px;
+  }
+
+  .button {
+    flex: 1 1 100%;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
